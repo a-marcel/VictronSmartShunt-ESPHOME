@@ -6,6 +6,7 @@ from esphome.const import (
     CONF_ID,
     DEVICE_CLASS_CURRENT,
     DEVICE_CLASS_EMPTY,
+    DEVICE_CLASS_ENERGY,
     DEVICE_CLASS_POWER,
     DEVICE_CLASS_VOLTAGE,
     ICON_CURRENT_AC,
@@ -217,7 +218,7 @@ CONFIG_SCHEMA = cv.Schema(
             unit_of_measurement=UNIT_WATT_HOURS,
             icon=ICON_POWER,
             accuracy_decimals=0,
-            device_class=DEVICE_CLASS_POWER,
+            device_class=DEVICE_CLASS_ENERGY,
         ),
         cv.Optional(CONF_LAST_FULL_CHARGE): sensor.sensor_schema(
             unit_of_measurement=UNIT_MINUTE,
@@ -241,7 +242,7 @@ CONFIG_SCHEMA = cv.Schema(
             unit_of_measurement=UNIT_WATT_HOURS,
             icon=ICON_POWER,
             accuracy_decimals=0,
-            device_class=DEVICE_CLASS_POWER,
+            device_class=DEVICE_CLASS_ENERGY,
         ),
         cv.Optional(CONF_NUMBER_OF_FULL_DIS): sensor.sensor_schema(
             unit_of_measurement=UNIT_EMPTY,

@@ -162,7 +162,6 @@ The available numeric sensors are:
 - `discharged_energy`
 - `number_of_full_dis`
 - `number_of_charge_cycles`
-- `discharged_energy`
 
 
 The available text sensors are:
